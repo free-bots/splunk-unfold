@@ -2,6 +2,7 @@
   "name": "splunk-unfold",
   "displayName": "splunk-unfold",
   "description": "splunk log export formatter",
+  "publisher": "free-bots",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.75.0"
@@ -10,14 +11,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:splunk-unfold.helloWorld"
+    "onCommand:splunk-unfold.unfold"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "splunk-unfold.helloWorld",
-        "title": "Hello World"
+        "command": "splunk-unfold.unfold",
+        "title": "Unfold Splunk logs"
       }
     ]
   },
