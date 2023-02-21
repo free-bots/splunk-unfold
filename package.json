@@ -4,6 +4,12 @@
   "description": "splunk log export formatter",
   "publisher": "free-bots",
   "version": "1.0.0",
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/free-bots/splunk-unfold.git"
+  },
   "engines": {
     "vscode": "^1.40.0"
   },
