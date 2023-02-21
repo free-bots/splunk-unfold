@@ -13,7 +13,7 @@ export const unfold = async () => {
         newText = JSON.stringify(transformedLines);
     } catch (error) {
         console.error('Error while stringify transformedLines', error);
-        return;
+        throw error;
     }
 
     const edit = new WorkspaceEdit();
@@ -45,6 +45,7 @@ const transformLines = (document: TextDocument): string[] => {
             lines.push(JSON.parse(line.text));
         } catch (error) {
             console.error(`Error while parsing line: ${line.text}`, error);
+            throw error;
         }
     }
 
